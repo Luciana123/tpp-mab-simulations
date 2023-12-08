@@ -23,3 +23,5 @@ go.work
 */idea/
 .idea/
 notebooks/.ipynb_checkpoints
+
+.DS_Store
