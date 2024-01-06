@@ -50,8 +50,8 @@ export function arm_selector() {
     let contextIsFemale = rewardInputs[randomI]["is_female"]
 
     const data = {
-        age: contextAge,
-        is_female: contextIsFemale
+        age: Number(contextAge),
+        is_female: Number(contextIsFemale)
     };
 
     let response = http.post(`${URL_ARM_SELECTOR}/api/v1/arm/selection/${experimentId}`, JSON.stringify(data), {
