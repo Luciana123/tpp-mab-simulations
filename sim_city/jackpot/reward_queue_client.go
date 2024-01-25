@@ -12,7 +12,9 @@ type RewardQueueClient struct {
 
 func NewRewardQueue() *RewardQueueClient {
 	// Connect to RabbitMQ server
+	//conn, err := amqp.Dial("amqps://jackpotAdmin:jackpotPassword@b-af17891f-ed2f-4168-a831-6a41ce175372.mq.us-east-2.amazonaws.com:5671/")
 	conn, err := amqp.Dial("amqp://jackpotAdmin:jackpotPassword@localhost:5672/")
+
 	reward.FailOnError(err, "Failed to connect to RabbitMQ")
 
 	// Create a channel

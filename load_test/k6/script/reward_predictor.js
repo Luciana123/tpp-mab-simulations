@@ -18,6 +18,7 @@ export let options = {
           maxVUs: 100,
           stages: [
             { target: 800, duration: '10m' },
+            { target: 800, duration: '30m' },
             { target: 0, duration: '1m' },
           ],
         }

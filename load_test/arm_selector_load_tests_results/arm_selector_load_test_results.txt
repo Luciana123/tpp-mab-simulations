@@ -1,0 +1,40 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: arm_selector.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 100 max VUs, 50m30s max duration (incl. graceful stop):
+           * time_measurement_arm_selector: Up to 13.33 iterations/s for 50m0s over 3 stages (maxVUs: 10-100, exec: arm_selector, gracefulStop: 30s)
+
+
+     ✓ status was ok
+
+     checks.........................: 100.00% ✓ 32098     ✗ 0
+     data_received..................: 6.1 MB  2.0 kB/s
+     data_sent......................: 6.9 MB  2.3 kB/s
+     dropped_iterations.............: 2       0.000667/s
+     errorRate......................: 0.00%   ✓ 0         ✗ 32098
+     http_req_blocked...............: avg=14.74µs min=2µs    med=6µs     max=27.71ms p(90)=13µs    p(95)=22µs
+     http_req_connecting............: avg=237ns   min=0s     med=0s      max=2.88ms  p(90)=0s      p(95)=0s
+   ✓ http_req_duration..............: avg=27.1ms  min=4.35ms med=13.34ms max=1.05s   p(90)=54.81ms p(95)=87.76ms
+       { expected_response:true }...: avg=27.1ms  min=4.35ms med=13.34ms max=1.05s   p(90)=54.81ms p(95)=87.76ms
+   ✓ http_req_failed................: 0.00%   ✓ 0         ✗ 32098
+     http_req_receiving.............: avg=83.36µs min=6µs    med=62µs    max=61.93ms p(90)=111µs   p(95)=147µs
+     http_req_sending...............: avg=51.99µs min=12µs   med=33µs    max=22.62ms p(90)=56µs    p(95)=83µs
+     http_req_tls_handshaking.......: avg=0s      min=0s     med=0s      max=0s      p(90)=0s      p(95)=0s
+     http_req_waiting...............: avg=26.97ms min=4.26ms med=13.22ms max=1.05s   p(90)=54.6ms  p(95)=87.47ms
+     http_reqs......................: 32098   10.698395/s
+     iteration_duration.............: avg=27.69ms min=4.68ms med=13.76ms max=1.05s   p(90)=55.7ms  p(95)=89.21ms
+     iterations.....................: 32098   10.698395/s
+     vus............................: 0       min=0       max=8
+     vus_max........................: 12      min=10      max=12
+
+
+running (50m00.3s), 000/012 VUs, 32098 complete and 0 interrupted iterations
+time_measurement_arm_selector ✓ [======================================] 000/012 VUs  50m0s  00.11 iters/s

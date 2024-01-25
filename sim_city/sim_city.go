@@ -23,6 +23,7 @@ func runSimulation(duration time.Duration) {
 
 	r := jackpot.NewRewardQueue()
 	jackpotClient := jackpot.NewHTTPClient("http://localhost:8090")
+	//jackpotClient := jackpot.NewHTTPClient("https://arm-selector.onrender.com")
 
 	startTime := time.Now()
 	for time.Since(startTime) < duration {
